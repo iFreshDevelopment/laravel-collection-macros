@@ -39,5 +39,17 @@ collect([1, 2, 3])->multiply();
 
 ### Strings
 Macro methods that are intended for working with collections that contain only strings.
+
+#### toLower
+Convert all the strings in the collection to their lowercase value.
 ```php
+// ['a', 'b', 'c']
+collect(['A', 'B', 'C'])->toLower();
+```
+
+#### toUpper
+Convert all the strings in the collection to their uppercase value.
+```php
+// ['A', 'B', 'C']
+collect(['a', 'b', 'c'])->toUpper();
 ```
