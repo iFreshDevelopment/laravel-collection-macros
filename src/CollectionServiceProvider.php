@@ -20,12 +20,14 @@ class CollectionServiceProvider extends ServiceProvider
     private function macros(): array
     {
         return [
-            'toUpper' => Macro\String\ToUpper::class,
-            'toLower' => Macro\String\ToLower::class,
-            'multiply' => Macro\Number\Multiply::class,
-            'lessThan' => Macro\Number\LessThan::class,
-            'greaterThan' => Macro\Number\GreaterThan::class,
-            'integers' => Macro\Types\Integers::class,
+            'toUpper' => \IFresh\Collection\Macro\String\ToUpper::class,
+            'toLower' => \IFresh\Collection\Macro\String\ToLower::class,
+            'multiply' => \IFresh\Collection\Macro\Number\Multiply::class,
+            'lessThan' => \IFresh\Collection\Macro\Number\LessThan::class,
+            'greaterThan' => \IFresh\Collection\Macro\Number\GreaterThan::class,
+            'integers' => \IFresh\Collection\Macro\Types\Integers::class,
+            'strings' => \IFresh\Collection\Macro\Types\Strings::class,
+            'doubles' => \IFresh\Collection\Macro\Types\Doubles::class,
         ];
     }
 }

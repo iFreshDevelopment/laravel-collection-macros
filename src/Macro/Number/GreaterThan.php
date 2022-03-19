@@ -14,7 +14,9 @@ class GreaterThan
                 return is_integer($value) || is_double($value);
             });
 
-            return $numbers->filter(fn($value) => $value > $minimalValue);
+            return $numbers->filter(function($value) use ($minimalValue) {
+                return $value > $minimalValue;
+            });
         };
     }
 }
