@@ -35,9 +35,8 @@ class LessThanTest extends TestCase
         $this->assertEquals(new Collection(), $output);
     }
 
-    // @todo: mooiere naam bedenken
     /** @test */
-    function it_flikkers_away_non_numerical_values()
+    function it_excludes_non_numerical_values()
     {
         $input = new Collection([10, 20, 30, 40, 'foo']);
 
